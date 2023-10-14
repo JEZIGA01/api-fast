@@ -17,6 +17,7 @@ public class User {
 	private Long id;
 	private String name;
 	private String email;
+	private String img;
 	
 	@ManyToOne
 	@JoinColumn(name = "department_id")
@@ -55,6 +56,14 @@ public class User {
 
 	public void setDepartment(Department department) {
 		this.department = department;
+	}
+
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
 	}
  
 }
